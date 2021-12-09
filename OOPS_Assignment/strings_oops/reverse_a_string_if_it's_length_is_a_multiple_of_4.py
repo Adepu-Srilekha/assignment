@@ -6,5 +6,5 @@ class Reverse:
             return ''.join(reversed(str1))
         return str1
 c=Reverse()
-result=c.reverse_string(str1='ghjk')
+result=c.reverse_string(str1='ghjk')z
 print('the result is',result)
