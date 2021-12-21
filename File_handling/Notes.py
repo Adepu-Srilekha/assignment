@@ -47,11 +47,11 @@ f=open('Mydata','r')
 print(f)
 #how to fetch the data ...using read
 print(f.read())
-print(f.read(4))---only first  4 characters it prints
-print(f.read(10))---it starts printing from the 4th to the 10 characters
-f.tell()---#tells whats the current cursor location
+print(f.read(4))#only first  4 characters it prints
+print(f.read(10))#it starts printing from the 4th to the 10 characters
+f.tell()#tells whats the current cursor location
 #if we want to move cursor back
-f.seek(0)--- #it brings the cursor to initial position
+f.seek(0)#it brings the cursor to initial position
 #what if.. if we want to get only some part of data
 
 #if suppose we are having huge data, we can pick whatever the data
@@ -61,35 +61,3 @@ print(f.readline())
 #if we want to print second line
 print(f.readline())
 print(f.readline())
-#how to write data
-f1=open('abc','w')
-#it will create a file
-#if we wants to write anything in the abc file
-f1.write('python')
-#if we want to append some text in abc file
-f1=open('abc','a')
-f1.write('hello world')
-# we have 2 files here .. if we want to copy one file and store to other
-f=open('Mydata','r')
-f1=open('abc','w')
-for data in f:
-    f1.write(data)
-#in files we have character mode and binary mode
-#if we are using image data..wb means write binary
-f=open('image file','wb')
-for i in f:
-    print(f.write(i))
-
-
-'''Renaming and Deleting Files in Python:
-first of all import os'''
-import os
-os.rename('test.txt','sample_txt')
-#for deleting a file
-os.remove('sample.txt')
-#os is the module in which rename and remove functions exist
-
-
-
-
-
